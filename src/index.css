@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+body{
+  background-color: #ece9e4;
+}
+.menu ul {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.menu ul li {
+  
+  font-size: 1em;
+  color: #333;
+  padding: 10px;
+}
+.menu ul li:hover {
+  background-color: aliceblue;
+}
+
+.header-custom {
+  transform: translatey(10px);
+  position: fixed;
+  width: 100vw;
+}
+
+.header-custom_nav {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 22px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
