@@ -11,7 +11,7 @@
   <header class="header-custom">
     <div class="header-custom_nav container mx-auto flex items-center justify-between py-4 px-6">
       <!-- Logo -->
-      <a href="<?php echo home_url(); ?>" class="text-2xl font-bold text-blue-600">
+      <a href="<?php echo home_url(); ?>" class="text-2xl text-black">
         <?php bloginfo('name'); ?>
       </a>
 

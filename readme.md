@@ -30,4 +30,3 @@ This is a WordPress theme that uses [Tailwind CSS](https://tailwindcss.com/) and
 * Run `npm run build` to build the theme
 * Upload the theme to your WordPress site
 * Activate the theme in the WordPress admin
-
