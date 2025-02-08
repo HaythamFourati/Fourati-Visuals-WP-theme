@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import HeroSection from "./HeroSection.js";
-import Test from "./TestComp.js";
+import HeroSection from "./JavaScript/HeroSection.js";
+import SubSection from "./JavaScript/SubSection.js";
+
 
 console.log("React script starting...");
 const renderElement = document.querySelector("#render-react");
@@ -12,8 +13,10 @@ if (renderElement) {
     const root = ReactDOM.createRoot(renderElement);
     root.render(
       <React.StrictMode>
-        <HeroSection />
-        <Test />
+        
+          <HeroSection />
+          <SubSection />
+        
       </React.StrictMode>
     );
     console.log("React component rendered successfully");
