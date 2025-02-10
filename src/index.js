@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import HeroSection from "./JavaScript/HeroSection.js";
 import SubSection from "./JavaScript/SubSection.js";
-
+import Section2 from "./JavaScript/Section2.js";
 
 console.log("React script starting...");
 const renderElement = document.querySelector("#render-react");
@@ -16,6 +16,7 @@ if (renderElement) {
         
           <HeroSection />
           <SubSection />
+          <Section2 />
         
       </React.StrictMode>
     );

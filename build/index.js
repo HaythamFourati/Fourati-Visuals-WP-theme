@@ -329,6 +329,102 @@ function Iridescence({
 
 /***/ }),
 
+/***/ "./src/JavaScript/Section2.js":
+/*!************************************!*\
+  !*** ./src/JavaScript/Section2.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gsap/ScrollTrigger */ "./node_modules/gsap/ScrollTrigger.js");
+
+
+
+
+
+
+// Register the ScrollTrigger plugin with GSAP
+gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger);
+const Section2 = function () {
+  const boxRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    // Create a timeline for the animations
+    const tl = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].timeline({
+      scrollTrigger: {
+        trigger: boxRef.current,
+        start: "top center",
+        end: "10px",
+        // Adjust this value as needed
+        scrub: true
+      }
+    });
+
+    // Add animations to the timeline
+    tl.from(boxRef.current, {
+      scale: 0.8 // Start scaling from 0.2
+    }).to(boxRef.current, {
+      scale: 1 // Scale to 1.1
+    });
+
+    // Cleanup function to kill the ScrollTrigger instance
+    return () => {
+      tl.kill();
+      gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
+    ref: boxRef,
+    className: "container mx-auto h-full section-bg pt-10"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "grid md:grid-cols-2 gap-8 items-center"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
+    className: "text-8xl p-6 text-gray-800"
+  }, "Projects"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "text-gray-800 text-lg pb-6"
+  }, "We offer services that are designed to fit your business needs perfectly. Whether it's creating an engaging website, building your brand, improving your SEO, or setting up an ecommerce platform, we're here to boost your online presence and help you succeed."), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "bg-white p-0 rounded-lg"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
+    src: "https://fourati-visuals.local/wp-content/uploads/2025/02/project1.mp4",
+    autoPlay: true,
+    loop: true,
+    muted: true,
+    className: "w-full h-full object-cover rounded-lg"
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "bg-white p-0 rounded-lg"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
+    src: "https://fourati-visuals.local/wp-content/uploads/2025/02/project2.mp4",
+    autoPlay: true,
+    loop: true,
+    muted: true,
+    className: "w-full h-full object-cover rounded-lg"
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "bg-white p-0 rounded-lg"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
+    src: "https://fourati-visuals.local/wp-content/uploads/2025/02/project3.mp4",
+    autoPlay: true,
+    loop: true,
+    muted: true,
+    className: "w-full h-full object-cover rounded-lg"
+  })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "bg-white p-0 rounded-lg"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("video", {
+    src: "https://fourati-visuals.local/wp-content/uploads/2025/02/project4.mp4",
+    autoPlay: true,
+    loop: true,
+    muted: true,
+    className: "w-full h-full object-cover rounded-lg"
+  })))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Section2);
+
+/***/ }),
+
 /***/ "./src/JavaScript/SubSection.js":
 /*!**************************************!*\
   !*** ./src/JavaScript/SubSection.js ***!
@@ -380,7 +476,7 @@ const Test = function () {
   }, []);
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
     ref: boxRef,
-    className: "container mx-auto h-screen section-bg "
+    className: "container mx-auto h-full section-bg "
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "grid md:grid-cols-2 gap-8 items-center"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
@@ -451,9 +547,7 @@ const Test = function () {
     src: "https://fourati-visuals.local/wp-content/uploads/2025/02/ecommerce.png",
     alt: "Sample image",
     className: "rounded-lg w-full h-64 object-cover"
-  })))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
-    className: "container mx-auto h-screen bg-gray "
-  }));
+  })))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Test);
 
@@ -19881,6 +19975,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ "./node_modules/react-dom/client.js");
 /* harmony import */ var _JavaScript_HeroSection_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./JavaScript/HeroSection.js */ "./src/JavaScript/HeroSection.js");
 /* harmony import */ var _JavaScript_SubSection_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./JavaScript/SubSection.js */ "./src/JavaScript/SubSection.js");
+/* harmony import */ var _JavaScript_Section2_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./JavaScript/Section2.js */ "./src/JavaScript/Section2.js");
+
 
 
 
@@ -19892,7 +19988,7 @@ console.log("Found render element:", renderElement);
 if (renderElement) {
   try {
     const root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(renderElement);
-    root.render((0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_HeroSection_js__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_SubSection_js__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+    root.render((0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_HeroSection_js__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_SubSection_js__WEBPACK_IMPORTED_MODULE_3__["default"], null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_Section2_js__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
     console.log("React component rendered successfully");
   } catch (error) {
     console.error("Error rendering React component:", error);

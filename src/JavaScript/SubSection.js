@@ -35,7 +35,7 @@ const Test = function(){
     };
   }, []);
   return (<>
-    <section ref={boxRef} className="container mx-auto h-screen section-bg ">
+    <section ref={boxRef} className="container mx-auto h-full section-bg ">
      
     <div className="grid md:grid-cols-2 gap-8 items-center">
 
@@ -110,12 +110,7 @@ const Test = function(){
     </div>
 
     </section>
-    <section className="container mx-auto h-screen bg-gray ">
-      
-
-
- 
-    </section>
+    
     </>
    );
   
