@@ -26,6 +26,7 @@
   },
   "dependencies": {
     "@react-spring/web": "^9.7.5",
+    "framer-motion": "^11.18.2",
     "gsap": "^3.12.7",
     "ogl": "^1.0.11"
   }

@@ -106,6 +106,191 @@ const BlurText = ({
 
 /***/ }),
 
+/***/ "./src/JavaScript/CallToAction.js":
+/*!****************************************!*\
+  !*** ./src/JavaScript/CallToAction.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function CallToAction() {
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
+    className: "grid justify-center w-full min-h-screen mx-auto p-6 pt-32 font-roboto-flex text-6xl"
+  }));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CallToAction);
+
+/***/ }),
+
+/***/ "./src/JavaScript/DeviderHome.js":
+/*!***************************************!*\
+  !*** ./src/JavaScript/DeviderHome.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gsap/ScrollTrigger */ "./node_modules/gsap/ScrollTrigger.js");
+
+
+
+
+
+
+// Register the ScrollTrigger plugin with GSAP
+gsap__WEBPACK_IMPORTED_MODULE_1__["default"].registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger);
+const DeviderHome = function () {
+  const boxRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    // Create a timeline for the animations
+    const tl = gsap__WEBPACK_IMPORTED_MODULE_1__["default"].timeline({
+      scrollTrigger: {
+        trigger: boxRef.current,
+        start: "top center",
+        end: "10px",
+        // Adjust this value as needed
+        scrub: true
+      }
+    });
+
+    // Add animations to the timeline
+    tl.from(boxRef.current, {
+      scale: 0.8 // Start scaling from 0.2
+    }).to(boxRef.current, {
+      scale: 1 // Scale to 1.1
+    });
+
+    // Cleanup function to kill the ScrollTrigger instance
+    return () => {
+      tl.kill();
+      gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+  }, []);
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
+    ref: boxRef,
+    className: "grid center full mx-auto min-h-[500px] bg-blue-800 p-10 rounded-md mt-10"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "grid md:grid-cols-2 gap-8 items-center"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
+    className: "text-8xl p-6 pl-0 text-white"
+  }, "Client Testimonials"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "text-white text-lg pb-6"
+  }, "At Fourati Visuals, we take pride in delivering high-quality, custom WordPress solutions tailored to each client's unique needs. But don\u2019t just take our word for it\u2014see what our clients have to say!")), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "grid md:grid-cols-3 gap-6 max-w-5xl mx-auto"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "flex flex-col justify-between bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-gray-700 text-sm"
+  }, "\"He was extremely easy to work with. communication was great. he did ensuring i asked and more. I will be working with him again and again.\""), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "mt-4 flex items-center"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    src: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/profile/photos/24114884/original/1453743188359_facebook20160125-17101-17ne6n5.jpg",
+    class: "w-10 h-10 rounded-full mr-3",
+    alt: "User Avatar"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
+    class: "font-semibold text-gray-900"
+  }, "fathands7"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-xs text-gray-500"
+  }, "Pro client, Fiverr"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-xs text-gray-500"
+  }, "United States")))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "flex flex-col justify-between bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-gray-700 text-sm"
+  }, "\"Pleasure to work with Really trying to satisfy and makes sure customer is happy with the results Thank you very much!\""), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "mt-4 flex items-center"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    src: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/profile/photos/24114884/original/1453743188359_facebook20160125-17101-17ne6n5.jpg",
+    class: "w-10 h-10 rounded-full mr-3",
+    alt: "User Avatar"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
+    class: "font-semibold text-gray-900"
+  }, "elya99"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-xs text-gray-500"
+  }, "Pro client, Fiverr"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-xs text-gray-500"
+  }, "United States")))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "flex flex-col justify-between bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-gray-700 text-sm"
+  }, "\"Haytham, developed solutions and great support has helped us for our project. We would definitely recomend him, as he is patient, attentive and proactive with further customization. We are thankful\""), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "mt-4 flex items-center"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    src: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/profile/photos/24114884/original/1453743188359_facebook20160125-17101-17ne6n5.jpg",
+    class: "w-10 h-10 rounded-full mr-3",
+    alt: "User Avatar"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
+    class: "font-semibold text-gray-900"
+  }, "freelancemu"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-xs text-gray-500"
+  }, "Repeat Client, Fiverr"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-xs text-gray-500"
+  }, "Mauritius")))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "flex flex-col justify-between bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-gray-700 text-sm"
+  }, "\"Excellent! The seller is very professional, he does high quality work and pays attention to the requirements and doubts of the customers. He delivered work on time. I am very satisfied.\""), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "mt-4 flex items-center"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    src: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/profile/photos/24114884/original/1453743188359_facebook20160125-17101-17ne6n5.jpg",
+    class: "w-10 h-10 rounded-full mr-3",
+    alt: "User Avatar"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
+    class: "font-semibold text-gray-900"
+  }, "Oscaririartep"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-xs text-gray-500"
+  }, "Fiverr"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-xs text-gray-500"
+  }, "Peru")))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "flex flex-col justify-between bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-gray-700 text-sm"
+  }, "\"Highly professional and delivers exactly whats needed. SEO improvements were noticeable within weeks!\""), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "mt-4 flex items-center"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    src: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/profile/photos/24114884/original/1453743188359_facebook20160125-17101-17ne6n5.jpg",
+    class: "w-10 h-10 rounded-full mr-3",
+    alt: "User Avatar"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
+    class: "font-semibold text-gray-900"
+  }, "Garey Simmons"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-xs text-gray-500"
+  }, "Marketing Manager"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-xs text-gray-500"
+  }, "United States")))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "flex flex-col justify-between bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-gray-700 text-sm"
+  }, "\"Love the new theme and design. Would highly recommend!\""), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "mt-4 flex items-center"
+  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+    src: "https://fiverr-res.cloudinary.com/image/upload/f_auto,q_auto,t_profile_small/v1/profile/photos/24114884/original/1453743188359_facebook20160125-17101-17ne6n5.jpg",
+    class: "w-10 h-10 rounded-full mr-3",
+    alt: "User Avatar"
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
+    class: "font-semibold text-gray-900"
+  }, "Successmedia360"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-xs text-gray-500"
+  }, "Pro Client, Fiverr"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    class: "text-xs text-gray-500"
+  }, "United States"))))))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DeviderHome);
+
+/***/ }),
+
 /***/ "./src/JavaScript/HeroSection.js":
 /*!***************************************!*\
   !*** ./src/JavaScript/HeroSection.js ***!
@@ -19976,6 +20161,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _JavaScript_HeroSection_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./JavaScript/HeroSection.js */ "./src/JavaScript/HeroSection.js");
 /* harmony import */ var _JavaScript_SubSection_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./JavaScript/SubSection.js */ "./src/JavaScript/SubSection.js");
 /* harmony import */ var _JavaScript_Section2_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./JavaScript/Section2.js */ "./src/JavaScript/Section2.js");
+/* harmony import */ var _JavaScript_DeviderHome_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./JavaScript/DeviderHome.js */ "./src/JavaScript/DeviderHome.js");
+/* harmony import */ var _JavaScript_CallToAction_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./JavaScript/CallToAction.js */ "./src/JavaScript/CallToAction.js");
+
+
 
 
 
@@ -19988,7 +20177,7 @@ console.log("Found render element:", renderElement);
 if (renderElement) {
   try {
     const root = react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot(renderElement);
-    root.render((0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_HeroSection_js__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_SubSection_js__WEBPACK_IMPORTED_MODULE_3__["default"], null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_Section2_js__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
+    root.render((0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_HeroSection_js__WEBPACK_IMPORTED_MODULE_2__["default"], null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_SubSection_js__WEBPACK_IMPORTED_MODULE_3__["default"], null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_DeviderHome_js__WEBPACK_IMPORTED_MODULE_5__["default"], null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_Section2_js__WEBPACK_IMPORTED_MODULE_4__["default"], null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_JavaScript_CallToAction_js__WEBPACK_IMPORTED_MODULE_6__["default"], null)));
     console.log("React component rendered successfully");
   } catch (error) {
     console.error("Error rendering React component:", error);

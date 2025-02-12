@@ -4,8 +4,22 @@
 
 
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;1000&display=swap');
+
 html {
   scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('https://fonts.gstatic.com/s/robotoflex/v7/...');
+  font-weight: 400 1000;
+  font-stretch: 100%;
+}
+
+.variable-proximity-demo {
+  font-variation-settings: 'wght' 400, 'opsz' 9;
+  transition: font-variation-settings 0.3s ease;
 }
 
 .fancy_button{
