@@ -20,4 +20,4 @@ jobs:
           remote-user: u535044671
           private-ssh-key: ${{ secrets.SSH_KEY }}
           destination-path: /home/u535044671/fourativisuals.com/wp-content/themes/Fourati-Visuals-Custom-Theme/
-          ssh-port: 65001
+          ssh-port: 65002
