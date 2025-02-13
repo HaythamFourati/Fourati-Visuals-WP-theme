@@ -56,7 +56,7 @@ const Test = function () {
             </button>
             <img
               style={{ width: "100%", height: "auto" }}
-              src="/wp-content/uploads/2025/02/laptop-mockup.png"
+              src="/wp-content/uploads/laptop-mockup.png"
               alt="Sample image"
               className="rounded-lg w-full h-64 object-cover"
             />
@@ -73,7 +73,7 @@ const Test = function () {
             </button>
             <img
               style={{ width: "100%", height: "auto" }}
-              src="/wp-content/uploads/2025/02/mobile-mockup.png"
+              src="/wp-content/uploads/mobile-mockup.png"
               alt="Sample image"
               className="rounded-lg w-full h-64 object-cover"
             />
@@ -93,7 +93,7 @@ const Test = function () {
             </button>
             <img
               style={{ width: "100%", height: "auto" }}
-              src="/wp-content/uploads/2025/02/google-logo-icon.png"
+              src="/wp-content/uploads/google-logo-icon.png"
               alt="Sample image"
               className="rounded-lg w-full h-64 object-cover"
             />
@@ -110,7 +110,7 @@ const Test = function () {
             </button>
             <img
               style={{ width: "100%", height: "auto" }}
-              src="/wp-content/uploads/2025/02/ecommerce.png"
+              src="/wp-content/uploads/ecommerce.png"
               alt="Sample image"
               className="rounded-lg w-full h-64 object-cover"
             />
