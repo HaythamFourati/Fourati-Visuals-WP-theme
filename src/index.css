@@ -70,8 +70,8 @@ html {
 }
 
 body {
-  /* background-color: rgb(252,250,251); */
-  background-color: rgb(255, 10, 133);
+  background-color: rgb(252, 250, 251);
+
   overflow-x: hidden;
 }
 .menu ul {
