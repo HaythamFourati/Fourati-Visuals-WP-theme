@@ -14,8 +14,8 @@ const Test = function () {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: boxRef.current,
-        start: "top center",
-        end: "10px", // Adjust this value as needed
+        start: "top bottom",
+        end: "50%", // Adjust this value as needed
         scrub: true,
       },
     });

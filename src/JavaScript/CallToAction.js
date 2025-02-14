@@ -14,19 +14,19 @@ const CallToAction = function(){
      const tl = gsap.timeline({
       scrollTrigger: {
         trigger: boxRef.current,
-        start: "top center",
-        end: "10px", // Adjust this value as needed
+        start: "top bottom",
+        end: "50%", // Adjust this value as needed
         scrub: true,
       },
     });
 
     // Add animations to the timeline
     tl.from(boxRef.current, {
-      scale: 0.8, // Start scaling from 0.2
+      scale: 0.5,
+      duration: 1,
     })
     .to(boxRef.current, {
       scale: 1, // Scale to 1.1
-      rotate:360, // Rotate 360 degrees
     });
 
     // Cleanup function to kill the ScrollTrigger instance
@@ -40,7 +40,7 @@ const CallToAction = function(){
      
     
        
-        <h2 className="text-8xl p-6 text-gray-800">Call to action here</h2>
+        <h2 className="text-8xl p-6 text-gray-800">Let's Collaborate</h2>
           
     
     
