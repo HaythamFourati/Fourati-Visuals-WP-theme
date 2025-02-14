@@ -40,7 +40,7 @@ const Section2 = function () {
         className="container mx-auto h-full section-bg pt-10"
       >
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <h2 className="text-8xl p-6 text-gray-800">Projects</h2>
+          <h2 className="section-headline text-8xl p-6 text-gray-800">Projects</h2>
           <p className="text-gray-800 text-lg pb-6">
             We offer services that are designed to fit your business needs
             perfectly. Whether it's creating an engaging website, building your

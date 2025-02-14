@@ -37,7 +37,7 @@ const Test = function () {
     <>
       <section ref={boxRef} className="container mx-auto h-full section-bg ">
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          <h2 className="text-8xl p-6 text-gray-800">Services</h2>
+          <h2 className="section-headline text-8xl p-6 text-gray-800">Services</h2>
           <p className="text-gray-800 text-lg pb-6">
             We offer services that are designed to fit your business needs
             perfectly. Whether it's creating an engaging website, building your
@@ -45,7 +45,7 @@ const Test = function () {
             we're here to boost your online presence and help you succeed.
           </p>
 
-          <div className="bg-white pt-6 pl-6 pr-6 pb-0 border-blue-100 rounded-lg">
+          <div className="bg-white pt-6 pl-6 pr-6 pb-0 border-2 border-dashed border-gray-500 rounded-lg">
             <h3 className="text-4xl text-gray-800 pb-6">Website Design</h3>
             <p className="text-gray-600 text-lg pb-6">
               We specialize in developing interactive, scalable, brand-oriented,
@@ -62,7 +62,7 @@ const Test = function () {
             />
           </div>
 
-          <div className="bg-white pt-6 pl-6 pr-6 pb-0 border-blue-100 rounded-lg">
+          <div className="bg-white pt-6 pl-6 pr-6 pb-0 border-2 border-dashed border-gray-500 rounded-lg">
             <h3 className="text-4xl text-gray-800 pb-6">Website Development</h3>
             <p className="text-gray-600 text-lg pb-6">
               Be it static, customized, or dynamic, we follow industry best
@@ -79,7 +79,7 @@ const Test = function () {
             />
           </div>
 
-          <div className="bg-white pt-6 pl-6 pr-6 pb-0 border-blue-100 rounded-lg">
+          <div className="bg-white pt-6 pl-6 pr-6 pb-0 border-2 border-dashed border-gray-500 rounded-lg">
             <h3 className="text-4xl text-gray-800 pb-6">
               Search Optimization - SEO
             </h3>
@@ -99,7 +99,7 @@ const Test = function () {
             />
           </div>
 
-          <div className="bg-white pt-6 pl-6 pr-6 pb-0 border-blue-100 rounded-lg">
+          <div className="bg-white pt-6 pl-6 pr-6 pb-0 border-2 border-dashed border-gray-500 rounded-lg">
             <h3 className="text-4xl text-gray-800 pb-6">E-commerce Websites</h3>
             <p className="text-gray-600 text-lg pb-6">
               We craft robust, aesthetically pleasing, and conversion-focused
