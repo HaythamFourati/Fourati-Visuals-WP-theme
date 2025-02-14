@@ -50,7 +50,7 @@ const Section2 = function () {
 
           <div className="bg-white p-0 rounded-lg">
             <video
-              src="/wp-content/uploads/2025/02/project1.mp4"
+              src="https://fourativisuals.com/wp-content/uploads/2025/02/project1.mp4"
               autoPlay
               loop
               muted
@@ -60,7 +60,7 @@ const Section2 = function () {
 
           <div className="bg-white p-0 rounded-lg">
             <video
-              src="/wp-content/uploads/2025/02/project2.mp4"
+              src="https://fourativisuals.com/wp-content/uploads/2025/02/project2.mp4"
               autoPlay
               loop
               muted
@@ -70,7 +70,7 @@ const Section2 = function () {
 
           <div className="bg-white p-0 rounded-lg">
             <video
-              src="/wp-content/uploads/2025/02/project3.mp4"
+              src="https://fourativisuals.com/wp-content/uploads/2025/02/project3.mp4"
               autoPlay
               loop
               muted
@@ -80,7 +80,7 @@ const Section2 = function () {
 
           <div className="bg-white p-0 rounded-lg">
             <video
-              src="/wp-content/uploads/2025/02/project4.mp4"
+              src="https://fourativisuals.com/wp-content/uploads/2025/02/project4.mp4"
               autoPlay
               loop
               muted
