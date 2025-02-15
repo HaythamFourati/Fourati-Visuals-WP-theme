@@ -63,18 +63,22 @@ const BlogPosts = () => {
     }, []);
 
     return (
-        <section ref={boxRef} className="grid items-center justify-center full mx-auto min-h-[500px] bg-gray-100 p-10 rounded-md mt-10">
-            <h2 className="section-headline text-8xl p-6 text-gray-800">Latest Blog Articles</h2>
+        <section ref={boxRef} className="grid items-center justify-center full mx-auto min-h-[500px]  rounded-md mt-100">
+            <h2 className="section-headline text-8xl p-6 text-gray-800">News</h2>
             
-                <ul className="grid md:grid-cols-3 gap-8 items-center">
+                <ul className="grid md:grid-cols-3 gap-8 items-center p-6">
                     {articles.map(article => (
                         <li className="blog-article-home" key={article.id}>
                             <img src={article.thumbnail} alt={article.title.rendered} />
+                            <p className="date">
+                            {new Date(article.date).getDate()}<br />
+                            {new Date(article.date).toLocaleString('default', { month: 'short' })}
+                              </p>
                             <div className="content">
                               <h3 className="text-4xl text-gray-800">{article.title.rendered}</h3>
-                              <p>{new Date(article.date).toLocaleDateString()}</p>
-                              <div dangerouslySetInnerHTML={{ __html: article.excerpt.rendered }} />
-                              <a href={article.link} className="text-blue-600 hover:underline">Read More</a>
+                              
+                              <div dangerouslySetInnerHTML={{ __html: article.excerpt.rendered.slice(0, 150) + (article.excerpt.rendered.length > 150 ? '...' : '') }} />
+                              <a href={article.link} className=" hover:bg-blue-800">Read More</a>
                             </div>
                         </li>
                     ))}
